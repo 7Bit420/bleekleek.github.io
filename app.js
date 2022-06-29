@@ -15,7 +15,7 @@ const bobword = answers[day]
 const len = bobword.length
 const bobletters = [];
 
-for (let a = 0; a<len; a++){
+for (let a = 0; a<len; a+=1){
     bobletters.push(bobword.charAt(a))
 }
 
@@ -26,12 +26,11 @@ while (i < len){
 }
 i = 0
 
-document.querySelector('#row1').innerHTML = html
-document.querySelector('#row2').innerHTML = html
-document.querySelector('#row3').innerHTML = html
-document.querySelector('#row4').innerHTML = html
-document.querySelector('#row5').innerHTML = html
-document.querySelector('#row6').innerHTML = html
+i=1
+while (i <= 6){
+    document.querySelector('#row'+i).innerHTML = html
+}
+i=0
 
 let curwordarr = []
 let curwordstr = ''
