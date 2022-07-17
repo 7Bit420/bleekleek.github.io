@@ -64,12 +64,12 @@ document.onkeydown = (e) => {
                 curwordstr += curwordarr[c]
             }
             curwordstr = curwordstr.toLowerCase()
+
             boob = true
             for (let blob = 0; blob<len; blob+=1){
                 if (bobinsky.includes(curwordstr.charAt(blob)) === false){
                     boob = false
                 }
-                blob+=1
             }
 
             if (boob){
